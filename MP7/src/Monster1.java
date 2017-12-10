@@ -38,10 +38,12 @@ public class Monster1 extends gameObject {
 	  	    		  if (luck2 >= 0.75) {
 	  	    			  System.out.println("Good luck, you escaped");
 	  	    			  changeinhp = 0;
+	  	    			  return;
 	  	    		  } else {
 	  	    			  System.out.println("You failed to escape, but after a hard battle, you killed the monster.");
 	  	    			  changeinhp = -4;
 	  	    			  this.alive1 = false;
+	  	    			  return;
 	  	    		  }
 	  	    	  }
 	  	    	  if (n.equals("2")) {
@@ -51,11 +53,13 @@ public class Monster1 extends gameObject {
 	  	  		    	  changeinhp = -2;
 	  	  		    	  System.out.println("You killed the monster easily");
 	  	  		    	  this.alive1 = false;
+	  	  		    	  return;
 	  	  		    	  
 	  	  		      } else {
 	  	  		    	  System.out.println("You killed the monster not so easily");
 	  	  		    	  changeinhp = -4;
 	  	  		    	  this.alive1 = false;
+	  	  		    	  return;
 	  	  		      }
 	  	  		
 	  	    	  }
