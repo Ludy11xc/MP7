@@ -7,17 +7,22 @@ public class game {
 		Character challen = new Character();
 		int originX;
 		int originY;
+		
 		while(challen.getHP() > 0 && (challen.getX() != 3 || challen.getY() != 4)) {
+			
 			game.adventure[challen.getX()][challen.getY()].behavior();
 			challen.hpchange(game.adventure[challen.getX()][challen.getY()].changeinhp);
 			System.out.println("Current hp: " + challen.getHP());
 			originX = challen.getX();
 			originY = challen.getY();
+			
 			if (challen.getHP() <= 0) {
 				break;
 			}
+			
 			System.out.println();
 			challen.move();
+			
 			if (game.adventure[challen.getX()][challen.getY()].getClass() == blocked.class) {
 				game.adventure[challen.getX()][challen.getY()].behavior();
 				challen.hpchange(game.adventure[challen.getX()][challen.getY()].changeinhp);
