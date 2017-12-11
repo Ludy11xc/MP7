@@ -15,7 +15,7 @@ public class Character {
     	System.out.println("Your wounds are too much.  \nYou fall on the ground and breathe your last breath.  \nYou failed.");
     	this.alive = false;
     }
-    public void hpchange (final int a) {
+    public void hpchange(final int a) {
     	 
     	hp = hp + a;
     	if (hp > 10) {
