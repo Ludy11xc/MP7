@@ -1,31 +1,31 @@
 import java.util.Scanner;
 public class Character {
-	private boolean talk;
-	   private boolean fight;
-	   static Scanner myScan = new Scanner(System.in);
+	//private boolean talk;
+	//private boolean fight;
+	static Scanner myScan = new Scanner(System.in);
 	private int x = 2;
-     private int y = 1;
-     private int hp = 10;
-     public boolean alive = true;
-     public Character() {
+    private int y = 1;
+    private int hp = 10;
+    public boolean alive = true;
+    public Character() {
     	 
-     }
+    }
     
-     public void isOver() {
-    	 System.out.println("Your wounds are too much.  \nYou fall on the ground and breathe your last breath.  \nYou failed.");
-    	 this.alive = false;
-     }
-     public void hpchange (final int a) {
+    public void isOver() {
+    	System.out.println("Your wounds are too much.  \nYou fall on the ground and breathe your last breath.  \nYou failed.");
+    	this.alive = false;
+    }
+    public void hpchange (final int a) {
     	 
-    	 hp = hp + a;
-    	 if (hp > 10) {
-    		 hp = 10;
-    	 }
-    	 if (hp <= 0) {
+    	hp = hp + a;
+    	if (hp > 10) {
+    		hp = 10;
+    	}
+    	if (hp <= 0) {
     		this.isOver(); 
-    	 }
-    	 if (hp < 0) {
-    		 hp = 0;
+    	}
+    	if (hp < 0) {
+    		hp = 0;
     	 }
      }
      public void move() {
@@ -67,8 +67,8 @@ public class Character {
     	 
        
       public int getX() {
-	return this.x;
-}
+    	  return this.x;
+      }
       public int getY() {
     	  return this.y;
       }

@@ -25,9 +25,9 @@ public class Monster1 extends gameObject {
 	  	    	  changeinhp = 1;
 	  	    	  return;
 	  	      } else {
-	  	    	  System.out.println("The monster believes that what you said is just bullshit and gets annoyed.");
-	  	    	  System.out.println("1:escape");
-	  	    	  System.out.println("2:fight");
+	  	    	  System.out.println("The monster believes that what you said is just garbage and gets annoyed.");
+	  	    	  System.out.println("1: escape");
+	  	    	  System.out.println("2: fight");
 	  	    	   n = myScan.next();
 	  	    	  while (n.equals("1") == false && n.equals("2") == false) {
 	  	    		  System.out.println("Invalid choice.  Try again.");

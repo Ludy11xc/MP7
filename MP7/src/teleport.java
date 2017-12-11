@@ -8,8 +8,8 @@ public class teleport extends gameObject {
    }
    public void behavior() {
 	   System.out.println(intro);
-	   int tx = 1;
-	   int ty = 4;
+	   //int tx = 1;
+	   //int ty = 4;
 	   
 	   changeinhp = 0;
    }
